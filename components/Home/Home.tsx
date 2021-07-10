@@ -1,7 +1,7 @@
-import Hero from './Hero';
-import HowWeWork from './HowWeWork';
-import IntroducingMekarlaksana from './IntroducingMekarlaksana';
-import OurMission from './OurMission';
+import Hero from './modules/components/Hero';
+import HowWeWork from './modules/components/HowWeWork';
+import IntroducingMekarlaksana from './modules/components/IntroducingMekarlaksana';
+import OurMission from './modules/components/OurMission';
 
 const Home = () => {
   return (
