@@ -1,13 +1,12 @@
+import Home from '@components/Home';
 import Layout from '@components/common/Layout';
-import LandingPage from '@components/landing-page';
 
-export default function Home() {
+const HomePage = () => {
   return (
     <Layout>
-      <LandingPage.Hero />
-      <LandingPage.IntroducingMekarlaksana />
-      <LandingPage.HowWeWork />
-      <LandingPage.OurMission />
+      <Home />
     </Layout>
   );
-}
+};
+
+export default HomePage;
