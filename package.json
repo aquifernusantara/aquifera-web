@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "preinstall": "node utils/preinstall-script.js"
+    "preinstall": "node utils/preinstall-script.util.js"
   },
   "dependencies": {
     "classnames": "^2.3.1",
