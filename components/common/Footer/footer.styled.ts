@@ -6,14 +6,14 @@ import { DEVICE_SIZE } from '@constants/device-size.constant';
 export const StyledFooter = styled.footer`
   position: relative;
   padding: 2.4rem;
-  height: 24rem;
-  background-color: ${COLOR.primary};
-  color: #fff;
+  height: 36rem;
+  background-color: white;
+  color: ${COLOR.primary};
 
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
 
   @media (max-width: ${DEVICE_SIZE.mobileL}) {
     height: 18rem;
@@ -38,6 +38,7 @@ export const StyledFooter = styled.footer`
   }
 
   ul {
+    margin-top: 3.6rem;
     list-style-type: none;
 
     display: flex;
@@ -57,7 +58,7 @@ export const StyledFooter = styled.footer`
 
         span {
           margin-left: 1.2rem;
-          font-size: 1.2rem;
+          font-size: 1.8rem;
 
           @media (max-width: 1220px) {
             display: none;

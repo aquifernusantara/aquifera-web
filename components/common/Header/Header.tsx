@@ -17,7 +17,7 @@ const Header = () => {
           <Link href="/">
             <a className="logo">
               <img
-                src="/svg/icons/logo-aquifera.svg"
+                src="/svg/aquifera-logo-horizontal.svg"
                 alt="logo aquifera"
                 className="logo-aquifera"
               />

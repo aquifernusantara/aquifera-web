@@ -6,9 +6,12 @@ const Footer = () => {
   return (
     <StyledFooter>
       <div className="logo-container">
-        <Image src="/svg/aquifera.svg" alt="logo aquifera" layout="fill" />
+        <Image
+          src="/svg/aquifera-logo-vertical.svg"
+          alt="logo aquifera"
+          layout="fill"
+        />
       </div>
-      <div className="info">Jangan sampai ketinggalan info terkini</div>
 
       <ul>
         <li>
@@ -18,7 +21,7 @@ const Footer = () => {
             rel="noreferrer"
           >
             <Image
-              src="/svg/youtube.svg"
+              src="/svg/youtube-outline-primary.svg"
               alt="youtube"
               width={36}
               height={36}
@@ -33,7 +36,7 @@ const Footer = () => {
             rel="noreferrer"
           >
             <Image
-              src="/svg/facebook.svg"
+              src="/svg/facebook-outline-primary.svg"
               alt="facebook"
               width={24}
               height={24}
@@ -48,7 +51,7 @@ const Footer = () => {
             rel="noreferrer"
           >
             <Image
-              src="/svg/instagram.svg"
+              src="/svg/instagram-outline-primary.svg"
               alt="instagram"
               width={24}
               height={24}
@@ -58,7 +61,12 @@ const Footer = () => {
         </li>
         <li>
           <a href="mailto:aquifernusantara@gmail.com">
-            <Image src="/svg/mail.svg" alt="mail" width={24} height={24} />
+            <Image
+              src="/svg/mail-outline-primary.svg"
+              alt="mail"
+              width={24}
+              height={24}
+            />
             <span>aquifernusantara@gmail.com</span>
           </a>
         </li>
