@@ -9,5 +9,14 @@
   "trailingComma": "all",
   "htmlWhitespaceSensitivity": "ignore",
   "endOfLine": "lf",
-  "arrowParens": "avoid"
+  "arrowParens": "avoid",
+  "importOrder": [
+    "^@components/(.*)$",
+    "^@hooks/(.*)$",
+    "^@constants/(.*)$",
+    "^@utils/(.*)$",
+    "^[./]",
+    "^[../]"
+  ],
+  "importOrderSeparation": true
 }
