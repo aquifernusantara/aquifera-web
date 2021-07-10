@@ -2,8 +2,12 @@
 https://aquifera-web.vercel.app/
 
 ## Development Environtment
+Code editor:
 ```bash
 Code editor: Visual studio code
+```
+Required extension:
+```bash
 Required extension: Prettier - Code formatter
 ```
 
