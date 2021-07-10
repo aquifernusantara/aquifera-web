@@ -11,6 +11,8 @@
   "endOfLine": "lf",
   "arrowParens": "avoid",
   "importOrder": [
+    "^next/(.*)$",
+    "^[A-Za-z]",
     "^@components/(.*)$",
     "^@hooks/(.*)$",
     "^@constants/(.*)$",
