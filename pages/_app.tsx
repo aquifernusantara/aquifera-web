@@ -3,9 +3,9 @@ import Head from 'next/head';
 
 import { HelmetProvider } from 'react-helmet-async';
 
-import Mobile from '@components/Mobile';
 import '@components/common/Fonts/fonts.css';
 import GlobalStyle from '@components/common/GlobalStyles';
+import Mobile from '@components/common/Mobile';
 
 import useDevices from '@hooks/useDevices.hook';
 

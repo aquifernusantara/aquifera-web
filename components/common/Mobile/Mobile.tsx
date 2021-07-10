@@ -1,19 +1,14 @@
 /* eslint-disable @next/next/no-img-element */
 import Image from 'next/image';
 
-import SEO from '../common/SEO';
+import SEO from '../SEO';
 import { StyledMobile } from './mobile.styled';
 
 const Mobile = () => {
   return (
     <StyledMobile>
       <SEO title="Aquifer Nusantara" />
-      <Image
-        src="/svg/aquifera.svg"
-        alt="logo aquifera"
-        width={36}
-        height={36}
-      />
+      <img src="/svg/aquifera.svg" alt="logo aquifera" />
       <ul>
         <li>
           <a
