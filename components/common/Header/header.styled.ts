@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 import { COLOR } from '@constants/color.constant';
+import { COMPONENT_SIZING } from '@constants/component-sizing.constant';
 import { DEVICE_SIZE } from '@constants/device-size.constant';
 
 export const StyledHeader = styled.header`
@@ -8,7 +9,7 @@ export const StyledHeader = styled.header`
   position: fixed;
   top: 0;
   left: 0;
-  height: 7rem;
+  height: ${COMPONENT_SIZING.header}rem;
   width: 100%;
   padding: 0 5%;
   background-color: white;

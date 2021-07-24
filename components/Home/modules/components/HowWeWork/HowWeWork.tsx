@@ -15,12 +15,13 @@ const HowWeWork = () => {
         </p>
         <hr />
       </div>
+
       <div className="content__container">
         {OUR_WORK.map(work => (
           <PromotionalCard
             key={work.title}
-            title={work.title}
             imageUrl={work.imageUrl}
+            title={work.title}
             description={work.description}
             additionalDescription={work.additionalDescription}
           />
