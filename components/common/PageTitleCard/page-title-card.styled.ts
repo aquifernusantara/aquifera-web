@@ -11,8 +11,9 @@ export const StyledPageTitle = styled.div<StyledPageTitleProps>`
   padding-left: 3.2rem;
   margin-bottom: 1.2rem;
   justify-content: center;
-  border: 2px solid black;
+  border: 0.2rem solid black;
+  border-bottom: 0.8rem solid black;
   border-radius: 0 1.2rem 1.2rem 0;
   width: 98%;
-  box-shadow: 0.8rem 0.8rem 0 0 #000;
+  box-shadow: 0.8rem 0 0 0 #000;
 `;

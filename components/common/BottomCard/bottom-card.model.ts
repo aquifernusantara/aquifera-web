@@ -1,5 +1,5 @@
-import { ReactNode } from 'react';
-
 export interface BottomCardProps {
-  children: ReactNode;
+  title: string;
+  buttonPrimaryTitle?: string;
+  buttonSecondaryTitle?: string;
 }
