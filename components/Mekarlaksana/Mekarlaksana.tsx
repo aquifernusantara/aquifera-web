@@ -1,9 +1,7 @@
 import BottomCard from '@components/common/BottomCard';
-import Button from '@components/common/Button';
 import PageTitle from '@components/common/PageTitleCard';
 
 import { StyledMekarlaksana } from './mekarlaksana.styled';
-import BottomCardContent from './modules/components/BottomCardContent';
 import Sponsorship from './modules/components/Sponsorship';
 import Statistic from './modules/components/Statistic';
 import Story from './modules/components/Story';
@@ -20,9 +18,11 @@ const Mekarlaksana = () => {
       <Story />
       <VideoDocumentation />
       <Sponsorship />
-      <BottomCard>
-        <BottomCardContent />
-      </BottomCard>
+      <BottomCard
+        title="Tertarik dengan perubahan yang diberikan?"
+        buttonPrimaryTitle="Yuk, ikut bergabung"
+        buttonSecondaryTitle="Unduh Lembar Pertanggungjawaban"
+      />
     </StyledMekarlaksana>
   );
 };
