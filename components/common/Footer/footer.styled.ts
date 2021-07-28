@@ -6,7 +6,7 @@ import { DEVICE_SIZE } from '@constants/device-size.constant';
 export const StyledFooter = styled.footer`
   position: relative;
   padding: 2.4rem;
-  height: 36rem;
+  height: 24rem;
   background-color: white;
   color: ${COLOR.primary};
 

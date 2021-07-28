@@ -8,6 +8,7 @@ export const StyledSponsorship = styled.div`
   align-items: center;
   max-width: ${DEVICE_SIZE.tablet};
   margin: auto;
+  margin-bottom: 4.8rem;
 
   .description {
     font-size: 1.8rem;
