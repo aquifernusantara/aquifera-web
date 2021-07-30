@@ -11,8 +11,4 @@ export const HeaderRoutes = [
     link: '/tentang-kami',
     title: 'Tentang Kami',
   },
-  {
-    link: '/ikut-berpartisipasi',
-    title: 'Ikut Berpartisipasi',
-  },
 ];
