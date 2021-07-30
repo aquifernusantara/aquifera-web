@@ -20,7 +20,7 @@ export const StyledHero = styled.section`
     position: absolute;
     top: 0;
     left: 0;
-    width: 50%;
+    width: 80%;
     height: 100%;
     padding-top: 7rem;
     padding-left: 5%;
