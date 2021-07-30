@@ -1,15 +1,26 @@
 import Link from 'next/link';
-import { useRouter } from 'next/router';
 
 import { ButtonProps } from './button.model';
 import { StyledButton } from './button.styled';
 
-const Button = ({ children, href }: ButtonProps) => {
-  const router = useRouter();
+const Button: React.FC<ButtonProps> = ({
+  children,
+  href,
+  onClick,
+  secondary = false,
+}) => {
+  if (href) {
+    return (
+      <Link href={href} passHref>
+        <StyledButton secondary={secondary}>{children}</StyledButton>
+      </Link>
+    );
+  }
+
   return (
-    <Link href={href ? href : router.pathname} passHref>
-      <StyledButton>{children}</StyledButton>
-    </Link>
+    <StyledButton onClick={onClick} secondary={secondary}>
+      {children}
+    </StyledButton>
   );
 };
 

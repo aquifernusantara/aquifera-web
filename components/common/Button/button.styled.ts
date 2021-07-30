@@ -2,7 +2,9 @@ import styled from 'styled-components';
 
 import { COLOR } from '@constants/color.constant';
 
-export const StyledButton = styled.button`
+import { StyledButtonProps } from './button.model';
+
+export const StyledButton = styled.button<StyledButtonProps>`
   padding: 0.8rem 3.6rem;
   margin: 0;
   min-width: 24rem;
@@ -16,10 +18,12 @@ export const StyledButton = styled.button`
 
   text-decoration: none;
   cursor: pointer;
-  border: none;
 
-  background-color: ${COLOR.secondary};
-  border: 1px solid black;
+  background-color: ${props =>
+    !props.secondary ? COLOR.secondary : COLOR.primary};
+  border: ${props =>
+    !props.secondary ? '.1rem solid black' : '.1rem solid white'};
+  color: ${props => props.secondary && 'white'};
 
   font-size: 1.6rem;
   line-height: 140%;
@@ -27,7 +31,8 @@ export const StyledButton = styled.button`
 
   :hover {
     top: -4px;
-    box-shadow: 4px 4px 0 0 #000;
+    box-shadow: ${props =>
+      !props.secondary ? '4px 4px 0 0 #000' : '4px 4px 0 0 #fff'};
     transition: 0.1s ease-out;
   }
 

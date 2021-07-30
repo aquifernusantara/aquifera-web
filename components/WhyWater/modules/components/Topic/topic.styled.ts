@@ -1,9 +1,11 @@
 import styled from 'styled-components';
 
+import { COLOR } from '@constants/color.constant';
+
 export const StyledTopic = styled.div`
   padding-bottom: 2.4rem;
   margin-bottom: 2.4rem;
-  border-bottom: 1px solid #bdbdbd;
+  border-bottom: 0.1rem solid ${COLOR.border};
 
   .title {
     line-height: 4.68rem;

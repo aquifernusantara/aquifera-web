@@ -4,7 +4,7 @@ export const HeaderRoutes = [
     title: 'Mengapa Air?',
   },
   {
-    link: '/projek/mekarlaksana',
+    link: '/pencapaian-kami',
     title: 'Pencapaian Kami',
   },
   {

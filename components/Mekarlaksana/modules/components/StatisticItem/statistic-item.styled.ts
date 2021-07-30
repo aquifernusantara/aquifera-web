@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 
+import { COLOR } from '@constants/color.constant';
+
 export const StyledStatisticItem = styled.div`
   display: flex;
   flex-direction: column;
@@ -14,10 +16,10 @@ export const StyledStatisticItem = styled.div`
   }
 
   :first-of-type {
-    border-right: 1px solid #bdbdbd;
+    border-right: 0.1rem solid ${COLOR.border};
   }
 
   :last-of-type {
-    border-left: 1px solid #bdbdbd;
+    border-left: 0.1rem solid ${COLOR.border};
   }
 `;

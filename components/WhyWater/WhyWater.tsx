@@ -1,5 +1,6 @@
 import React from 'react';
 
+import BottomCard from '@components/common/BottomCard';
 import PageTitleCard from '@components/common/PageTitleCard';
 import { PageTitleBackgroundColor } from '@components/common/PageTitleCard/page-title-card.enum';
 
@@ -14,6 +15,10 @@ const WhyWater = () => {
         backgroundColor={PageTitleBackgroundColor.Primary}
       />
       <SplitContent />
+      <BottomCard
+        title="Sudah cukup tercerahkan?"
+        buttonPrimaryTitle="Yuk, ikut bergabung"
+      />
     </StyledWhyWater>
   );
 };

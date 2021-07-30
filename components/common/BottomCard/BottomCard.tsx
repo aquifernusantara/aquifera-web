@@ -15,7 +15,9 @@ const BottomCard: React.FC<BottomCardProps> = ({
         <h3>{title}</h3>
         <div className="button-container">
           {buttonPrimaryTitle && <Button>{buttonPrimaryTitle}</Button>}
-          {buttonSecondaryTitle && <Button>{buttonSecondaryTitle}</Button>}
+          {buttonSecondaryTitle && (
+            <Button secondary>{buttonSecondaryTitle}</Button>
+          )}
         </div>
       </div>
     </StyledBottomCard>
