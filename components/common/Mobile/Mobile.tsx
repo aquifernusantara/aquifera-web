@@ -54,7 +54,7 @@ const Mobile = () => {
             </a>
           </li>
         </ul>
-        <p>website kami masih dalam tahap pengembangan</p>
+        <p>website kami belum tersedia dalam versi mobile</p>
       </StyledMobile>
     </>
   );

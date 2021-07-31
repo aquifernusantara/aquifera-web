@@ -8,6 +8,7 @@ const BottomCard: React.FC<BottomCardProps> = ({
   title,
   buttonPrimaryTitle,
   buttonSecondaryTitle,
+  hrefPrimary = '/kontribusi',
   hrefSecondary,
   downloadSecondary = false,
 }) => {
@@ -16,7 +17,9 @@ const BottomCard: React.FC<BottomCardProps> = ({
       <div className="card">
         <h3>{title}</h3>
         <div className="button-container">
-          {buttonPrimaryTitle && <Button>{buttonPrimaryTitle}</Button>}
+          {buttonPrimaryTitle && (
+            <Button href={hrefPrimary}>{buttonPrimaryTitle}</Button>
+          )}
           {buttonSecondaryTitle && (
             <Button secondary href={hrefSecondary} download={downloadSecondary}>
               {buttonSecondaryTitle}
