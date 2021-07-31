@@ -9,6 +9,7 @@ const Mobile = () => {
     <>
       <SEO title="Aquifer Nusantara" />
       <StyledMobile>
+        <p>Mohon maaf, website kami belum tersedia dalam versi mobile</p>
         <img src="/svg/aquifera.svg" alt="logo aquifera" />
         <ul>
           <li>
@@ -54,7 +55,6 @@ const Mobile = () => {
             </a>
           </li>
         </ul>
-        <p>website kami belum tersedia dalam versi mobile</p>
       </StyledMobile>
     </>
   );
