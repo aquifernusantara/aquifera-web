@@ -9,15 +9,15 @@ const MekarlaksanaDescription = () => {
   return (
     <StyledMekarlaksanaDescription>
       <div className="description">
-        <h2>Aquifera Waterbox</h2>
+        <h2>Desa Mekarlaksana</h2>
         <p>
-          Water Box adalah perangkat IoT pengukur debit otomatis. Water Box
-          dapat digunakan untuk melakukan pencatatan debit air yang mengalir
-          didalam pipa. Kelak data yang terkumpulkan secara berkala akan
-          diteruskan ke cloud baik secara langsung melalui gsm/wifi atau melalui
-          perantara gateway.
+          Desa Mekarlaksana yang merupakan desa yang berada di Kecamatan
+          Ciparay, Kabupaten Bandung, Jawa Barat. Secara geografis, desa ini
+          dilingkupi oleh berbagai sumber daya alam. Di wilayah utara terdapat
+          aliran sungai serta persawahan, dan di area selatan dilingkupi deretan
+          tanaman lokal yaitu palawija.
         </p>
-        <Button href="/projek/mekarlaksana">Lihat projek</Button>
+        <Button href="/pencapaian-kami/mekarlaksana">Lihat projek</Button>
       </div>
       <div className="image">
         <img src="/png/mekarlaksana.png" alt="waterbox" />
