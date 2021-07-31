@@ -12,12 +12,7 @@ const Button: React.FC<ButtonProps> = ({
 }) => {
   if (download) {
     return (
-      <a
-        href={href}
-        download="LPJ Pilot Project Aquifera 2020"
-        target="_blank"
-        rel="noreferrer"
-      >
+      <a href={href} target="_blank" rel="noreferrer">
         <StyledButton secondary={secondary}>{children}</StyledButton>
       </a>
     );

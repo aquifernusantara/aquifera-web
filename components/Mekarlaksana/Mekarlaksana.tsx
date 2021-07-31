@@ -22,7 +22,7 @@ const Mekarlaksana = () => {
         title="Tertarik dengan perubahan yang diberikan?"
         buttonPrimaryTitle="Yuk, ikut bergabung"
         buttonSecondaryTitle="Unduh Lembar Pertanggungjawaban"
-        hrefSecondary="/pdf/lpj-aquifera.pdf"
+        hrefSecondary="/pdf/LPJ Pilot Project Aquifera 2020.pdf"
         downloadSecondary
       />
     </StyledMekarlaksana>
