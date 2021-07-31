@@ -15,7 +15,7 @@ const Hero = () => {
             bersih
           </h1>
         </div>
-        <Button>Bantu Selesaikan Masalah</Button>
+        <Button href="/kontribusi">Bantu Selesaikan Masalah</Button>
       </div>
     </StyledHero>
   );

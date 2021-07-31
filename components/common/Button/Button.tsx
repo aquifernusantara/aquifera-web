@@ -9,11 +9,14 @@ const Button: React.FC<ButtonProps> = ({
   onClick,
   secondary = false,
   download = false,
+  squareCorner = false,
 }) => {
   if (download) {
     return (
       <a href={href} target="_blank" rel="noreferrer">
-        <StyledButton secondary={secondary}>{children}</StyledButton>
+        <StyledButton secondary={secondary} squareCorner={squareCorner}>
+          {children}
+        </StyledButton>
       </a>
     );
   }
@@ -21,13 +24,19 @@ const Button: React.FC<ButtonProps> = ({
   if (href) {
     return (
       <Link href={href} passHref>
-        <StyledButton secondary={secondary}>{children}</StyledButton>
+        <StyledButton secondary={secondary} squareCorner={squareCorner}>
+          {children}
+        </StyledButton>
       </Link>
     );
   }
 
   return (
-    <StyledButton onClick={onClick} secondary={secondary}>
+    <StyledButton
+      onClick={onClick}
+      secondary={secondary}
+      squareCorner={squareCorner}
+    >
       {children}
     </StyledButton>
   );

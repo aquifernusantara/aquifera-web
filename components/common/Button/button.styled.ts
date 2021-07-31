@@ -9,7 +9,6 @@ export const StyledButton = styled.button<StyledButtonProps>`
   margin: 0;
   min-width: 24rem;
   width: fit-content;
-  border-radius: 5.4rem;
 
   position: relative;
   display: block;
@@ -24,6 +23,7 @@ export const StyledButton = styled.button<StyledButtonProps>`
   border: ${props =>
     !props.secondary ? '.1rem solid black' : '.1rem solid white'};
   color: ${props => props.secondary && 'white'};
+  border-radius: ${props => (!props.squareCorner ? '5.4rem' : '.4rem')};
 
   font-size: 1.6rem;
   line-height: 140%;
