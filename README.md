@@ -1,5 +1,5 @@
 ## Deployed Project
-https://aquifera-web.vercel.app/
+https://www.aquifera.com/
 
 ## Development Environtment
 Code editor:
