@@ -6,7 +6,6 @@ export const StyledBottomCard = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100vw;
   background-color: ${COLOR.secondary};
   padding: 6.4rem;
 
