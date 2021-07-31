@@ -8,6 +8,8 @@ const BottomCard: React.FC<BottomCardProps> = ({
   title,
   buttonPrimaryTitle,
   buttonSecondaryTitle,
+  hrefSecondary,
+  downloadSecondary = false,
 }) => {
   return (
     <StyledBottomCard>
@@ -16,7 +18,9 @@ const BottomCard: React.FC<BottomCardProps> = ({
         <div className="button-container">
           {buttonPrimaryTitle && <Button>{buttonPrimaryTitle}</Button>}
           {buttonSecondaryTitle && (
-            <Button secondary>{buttonSecondaryTitle}</Button>
+            <Button secondary href={hrefSecondary} download={downloadSecondary}>
+              {buttonSecondaryTitle}
+            </Button>
           )}
         </div>
       </div>

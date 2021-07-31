@@ -8,7 +8,21 @@ const Button: React.FC<ButtonProps> = ({
   href,
   onClick,
   secondary = false,
+  download = false,
 }) => {
+  if (download) {
+    return (
+      <a
+        href={href}
+        download="LPJ Pilot Project Aquifera 2020"
+        target="_blank"
+        rel="noreferrer"
+      >
+        <StyledButton secondary={secondary}>{children}</StyledButton>
+      </a>
+    );
+  }
+
   if (href) {
     return (
       <Link href={href} passHref>

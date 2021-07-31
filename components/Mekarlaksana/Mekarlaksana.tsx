@@ -22,6 +22,8 @@ const Mekarlaksana = () => {
         title="Tertarik dengan perubahan yang diberikan?"
         buttonPrimaryTitle="Yuk, ikut bergabung"
         buttonSecondaryTitle="Unduh Lembar Pertanggungjawaban"
+        hrefSecondary="/pdf/lpj-aquifera.pdf"
+        downloadSecondary
       />
     </StyledMekarlaksana>
   );
