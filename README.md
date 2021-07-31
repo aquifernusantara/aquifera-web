@@ -1,5 +1,5 @@
 ## Deployed Project
-https://www.aquifera.com/
+https://aquifera.com/
 
 ## Development Environtment
 Code editor:
