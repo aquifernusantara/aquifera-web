@@ -16,8 +16,12 @@ export const StyledPromotionalCard = styled.div`
   text-align: center;
   min-height: 40rem;
   cursor: default;
-
+  flex: 0.3;
   transition: 0.2s ease-in-out;
+
+  @media (max-width: 1190px) {
+    margin: 2.4rem;
+  }
 
   .title {
     font-size: 2rem;

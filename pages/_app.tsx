@@ -12,22 +12,20 @@ import useDevices from '@hooks/useDevices.hook';
 function MyApp({ Component, pageProps }: AppProps) {
   const { isMobile } = useDevices();
 
+  if (isMobile()) {
+    return <Mobile {...pageProps} />;
+  }
+
   return (
     <>
-      {isMobile() ? (
-        <Mobile {...pageProps} />
-      ) : (
-        <>
-          <Head>
-            <title>Aquifera</title>
-            <link rel="icon" href="/svg/aquifera-logo.svg" />
-          </Head>
-          <GlobalStyle />
-          <>
-            <Component {...pageProps} />
-          </>
-        </>
-      )}
+      <Head>
+        <title>Aquifera</title>
+        <link rel="icon" href="/svg/aquifera-logo.svg" />
+      </Head>
+      <GlobalStyle />
+      <>
+        <Component {...pageProps} />
+      </>
     </>
   );
 }

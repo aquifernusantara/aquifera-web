@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 
+import { DEVICE_SIZE } from '@constants/device-size.constant';
+
 export const StyledHowWeWork = styled.div`
   min-height: 80vh;
   padding: 3.6rem 5%;
@@ -20,5 +22,7 @@ export const StyledHowWeWork = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+    max-width: ${DEVICE_SIZE.laptop};
+    margin: auto;
   }
 `;
