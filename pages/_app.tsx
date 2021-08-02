@@ -1,19 +1,19 @@
 import type { AppProps } from 'next/app';
+import dynamic from 'next/dynamic';
 import Head from 'next/head';
-
-import { useEffect, useState } from 'react';
 
 import '@components/common/Fonts/fonts.css';
 import GlobalStyle from '@components/common/GlobalStyles';
-import Mobile from '@components/common/Mobile';
 
 import useDevices from '@hooks/useDevices.hook';
+
+const Mobile = dynamic(() => import('@components/common/Mobile'));
 
 function MyApp({ Component, pageProps }: AppProps) {
   const { isMobile } = useDevices();
 
   if (isMobile()) {
-    return <Mobile {...pageProps} />;
+    return <Mobile />;
   }
 
   return (
