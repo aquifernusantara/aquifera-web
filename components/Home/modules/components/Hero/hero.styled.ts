@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 
+import { DEVICE_SIZE } from '@constants/device-size.constant';
+
 export const StyledHero = styled.section`
   height: 100vh;
 
@@ -26,11 +28,14 @@ export const StyledHero = styled.section`
     padding-top: 7rem;
     padding-left: 5%;
 
+    @media (max-width: ${DEVICE_SIZE.laptop}) {
+      width: 90%;
+    }
+
     .title {
       margin-bottom: 2.4rem;
       h1 {
         font-weight: bold;
-        font-size: 64px;
       }
     }
   }
