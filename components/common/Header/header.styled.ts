@@ -38,21 +38,14 @@ export const StyledHeader = styled.header`
         height: 62;
         width: 150;
       }
-
-      @media (max-width: ${DEVICE_SIZE.mobileL}) {
-        padding-left: 10%;
-        justify-content: flex-start;
-        flex: 0.7;
-      }
     }
 
     .block--right {
       flex: 0.6;
       white-space: nowrap;
 
-      @media (max-width: ${DEVICE_SIZE.mobileL}) {
-        flex: 0.3;
-        display: none;
+      @media (max-width: ${DEVICE_SIZE.tablet}) {
+        text-align: right;
       }
 
       ul {
@@ -78,6 +71,29 @@ export const StyledHeader = styled.header`
               border-bottom: 3px solid ${COLOR.primary};
             }
           }
+        }
+        @media (max-width: ${DEVICE_SIZE.tablet}) {
+          display: none;
+        }
+      }
+
+      .btn-hamburger-icon {
+        background: none;
+        border: none;
+        padding: 0;
+        cursor: pointer;
+
+        :hover {
+          transform: scale(1.05);
+          transition: 0.1s ease-out;
+        }
+
+        :active {
+          transform: scale(1);
+        }
+
+        @media (min-width: 769px) {
+          display: none;
         }
       }
     }

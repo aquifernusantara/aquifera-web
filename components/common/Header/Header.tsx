@@ -40,6 +40,12 @@ const Header = () => {
               </li>
             ))}
           </ul>
+          <button className="btn-hamburger-icon">
+            <img
+              src="/svg/ci_hamburger.svg"
+              alt="hamburger icon"
+            />
+          </button>
         </div>
       </nav>
     </StyledHeader>
