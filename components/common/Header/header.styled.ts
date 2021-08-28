@@ -4,7 +4,9 @@ import { COLOR } from '@constants/color.constant';
 import { COMPONENT_SIZING_ON_REM } from '@constants/component-sizing.constant';
 import { DEVICE_SIZE } from '@constants/device-size.constant';
 
-export const StyledHeader = styled.header`
+import { StyledHeaderProps } from './header.model';
+
+export const StyledHeader = styled.header<StyledHeaderProps>`
   z-index: 10;
   position: fixed;
   top: 0;
@@ -78,6 +80,7 @@ export const StyledHeader = styled.header`
       }
 
       .btn-hamburger-icon {
+        display: none;
         background: none;
         border: none;
         padding: 0;
@@ -92,8 +95,46 @@ export const StyledHeader = styled.header`
           transform: scale(1);
         }
 
-        @media (min-width: 769px) {
-          display: none;
+        @media (max-width: ${DEVICE_SIZE.tablet}) {
+          display: initial;
+        }
+      }
+    }
+
+    .menu-slider-mobile {
+      background-color: white;
+      height: 100%;
+      width: 0;
+      position: fixed;
+      z-index: 1;
+      top: ${COMPONENT_SIZING_ON_REM.header}rem;
+      right: 0;
+      overflow-x: hidden;
+      transition: width 0.5s;
+      white-space: nowrap;
+
+      @media (max-width: ${DEVICE_SIZE.tablet}) {
+        display: initial;
+        width: ${props => props.siderOpen ? '100%' : '0'};
+        max-width: 50rem;
+      }
+
+      @media (max-width: ${DEVICE_SIZE.mobileL}) {
+        max-width: 100rem;
+      }
+
+      ul {
+        padding: 0 16px;
+
+        li {
+          font-size: 2.2rem;
+          height: 64px;
+          display: flex;
+          align-items: center;
+          border-bottom: 1px solid ${COLOR.border};
+          &:last-child {
+            border-bottom: 0;
+          }
         }
       }
     }
