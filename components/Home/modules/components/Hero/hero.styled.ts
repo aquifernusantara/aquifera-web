@@ -36,7 +36,14 @@ export const StyledHero = styled.section`
       margin-bottom: 2.4rem;
       h1 {
         font-weight: bold;
+        @media (max-width: ${DEVICE_SIZE.tablet}) {
+          font-size: 4.4rem;
+        }
       }
+    }
+
+    button {
+      font-size: 2rem;
     }
   }
 `;
