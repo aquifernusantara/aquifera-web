@@ -6,7 +6,6 @@ export const StyledSplitContent = styled.div`
 
   .sidebar {
     flex: 0.3;
-    height: 100vh;
     overflow-y: none;
   }
 
