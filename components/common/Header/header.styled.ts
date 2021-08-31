@@ -85,6 +85,8 @@ export const StyledHeader = styled.header<StyledHeaderProps>`
         border: none;
         padding: 0;
         cursor: pointer;
+        width: 7rem;
+        width: 8rem;
 
         :hover {
           transform: scale(1.05);

@@ -25,7 +25,7 @@ const Header = () => {
           <MenuList />
           <button className="btn-hamburger-icon" onClick={() => setSiderOpen(!siderOpen)}>
             <img
-              src="/svg/ci_hamburger.svg"
+              src={siderOpen ? '/svg/close_icon.svg' : '/svg/ci_hamburger.svg'}
               alt="hamburger icon"
             />
           </button>
