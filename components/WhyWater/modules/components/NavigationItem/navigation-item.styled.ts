@@ -1,8 +1,9 @@
 import styled from 'styled-components';
 
 import { COLOR } from '@constants/color.constant';
+import { StyledNavigationItemProps } from './navigation-item.model';
 
-export const StyledNavigationItem = styled.button`
+export const StyledNavigationItem = styled.button<StyledNavigationItemProps>`
   padding: 0.8rem 1.2rem;
   margin: 1.2rem 0;
   font-size: 1.6rem;
