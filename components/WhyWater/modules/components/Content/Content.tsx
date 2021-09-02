@@ -8,7 +8,7 @@ const Content = () => {
   return (
     <StyledContent>
       <Topic>
-        <h3 className="title">Memulai Pengertian</h3>
+        <h3 className="title" id="pemahaman-1">Memulai Pengertian</h3>
         <p className="subtitle">
           Air adalah salah satu elemen utama di Bumi yang menjadi bagian tidak
           terpisahkan bagi seluruh makhluk hidup.
@@ -27,7 +27,7 @@ const Content = () => {
         </p>
       </Topic>
       <Topic>
-        <h3 className="title">Bagaimana Jika Kekurangan Air Bersih?</h3>
+        <h3 className="title" id="pemahaman-2">Bagaimana Jika Kekurangan Air Bersih?</h3>
         <p className="subtitle">
           Kekurangan air bersih dapat menyebabkan sejumlah penyakit yang
           berbahaya bagi kesehatan, bahkan ada yang bisa mengancam jiwa.
@@ -75,7 +75,7 @@ const Content = () => {
         </ol>
       </Topic>
       <Topic>
-        <h3 className="title">Apakah Indonesia Kekurangan Air Bersih?</h3>
+        <h3 className="title" id="pemahaman-3" >Apakah Indonesia Kekurangan Air Bersih?</h3>
         <p>
           Ya, seperti yang kita tahu sudah terdengar kabar bahwa di Indonesia
           sudah terjadi krisis air di beberapa daerah. Berdasarkan data

@@ -78,29 +78,6 @@ export const StyledHeader = styled.header<StyledHeaderProps>`
           display: none;
         }
       }
-
-      .btn-hamburger-icon {
-        display: none;
-        background: none;
-        border: none;
-        padding: 0;
-        cursor: pointer;
-        width: 7rem;
-        width: 8rem;
-
-        :hover {
-          transform: scale(1.05);
-          transition: 0.1s ease-out;
-        }
-
-        :active {
-          transform: scale(1);
-        }
-
-        @media (max-width: ${DEVICE_SIZE.tablet}) {
-          display: initial;
-        }
-      }
     }
 
     .menu-slider-mobile {
