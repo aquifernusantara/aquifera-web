@@ -1,13 +1,16 @@
 import styled from 'styled-components';
 
 import { COLOR } from '@constants/color.constant';
+import { StyledBottomCardProps } from './bottom-card.model';
 
-export const StyledBottomCard = styled.div`
+export const StyledBottomCard = styled.div<StyledBottomCardProps>`
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: ${COLOR.secondary};
   padding: 6.4rem;
+  position: ${props => props.moveBack ? 'relative' : 'static'};
+  z-index: ${props => props.moveBack ? '-1' : '0'};
 
   .card {
     color: white;
