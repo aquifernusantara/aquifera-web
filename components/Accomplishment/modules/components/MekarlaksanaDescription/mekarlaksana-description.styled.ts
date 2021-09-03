@@ -1,3 +1,4 @@
+import { DEVICE_SIZE } from '@constants/device-size.constant';
 import styled from 'styled-components';
 
 export const StyledMekarlaksanaDescription = styled.div`
@@ -6,6 +7,7 @@ export const StyledMekarlaksanaDescription = styled.div`
   justify-content: space-between;
   align-items: center;
   text-align: justify;
+  flex-wrap: wrap;
 
   .description {
     flex: 0.5;
@@ -18,6 +20,10 @@ export const StyledMekarlaksanaDescription = styled.div`
     p {
       margin-bottom: 2.4rem;
     }
+
+    @media (max-width: ${DEVICE_SIZE.tablet}) {
+      flex: unset;
+    }
   }
 
   .image {
@@ -29,6 +35,10 @@ export const StyledMekarlaksanaDescription = styled.div`
 
     img {
       max-width: 40rem;
+    }
+
+    @media (max-width: ${DEVICE_SIZE.tablet}) {
+      flex: unset;
     }
   }
 
