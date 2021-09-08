@@ -25,5 +25,13 @@ export const StyledAquiferaTeam = styled.div`
       flex-basis: 30%;
       margin-bottom: 6rem;
     }
+
+    @media (max-width: ${DEVICE_SIZE.tablet}) {
+      justify-content: center;
+
+      > div {
+        flex-basis: unset;
+      }
+    }
   }
 `;
