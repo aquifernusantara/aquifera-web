@@ -22,10 +22,12 @@ export const StyledContributionCard = styled.div`
 
   .contributor-type {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     margin-bottom: 3.6rem;
 
     > div {
-      margin: 0 2.4rem;
+      margin: 0.5rem 2.4rem;
     }
   }
 
