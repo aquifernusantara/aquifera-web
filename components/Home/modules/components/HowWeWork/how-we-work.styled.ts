@@ -21,10 +21,13 @@ export const StyledHowWeWork = styled.div`
 
   .content__container {
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     max-width: ${DEVICE_SIZE.laptop};
     margin: auto;
+
+    @media(max-width: ${DEVICE_SIZE.laptop}) {
+      flex-wrap: wrap;
+    }
   }
 `;
