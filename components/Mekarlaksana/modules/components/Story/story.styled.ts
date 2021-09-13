@@ -6,6 +6,10 @@ export const StyledStory = styled.div`
   margin: auto;
   max-width: 68rem;
   margin-bottom: 4.8rem;
+  
+  @media (max-width: ${DEVICE_SIZE.tablet}) {
+    padding: 0 3rem;
+  }
 
   .story__title {
     font-size: 3.6rem;

@@ -1,17 +1,14 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from 'next/link';
-import { useRouter } from 'next/router';
+import { useState } from 'react';
 
-import cn from 'classnames';
-
-import { HeaderRoutes } from './header.constant';
 import { StyledHeader } from './header.styled';
+import MenuList from './MenuList';
 
 const Header = () => {
-  const router = useRouter();
-
+  const [siderOpen, setSiderOpen] = useState(false);
   return (
-    <StyledHeader>
+    <StyledHeader siderOpen={siderOpen}>
       <nav>
         <div className="block--left">
           <Link href="/">
@@ -25,21 +22,16 @@ const Header = () => {
           </Link>
         </div>
         <div className="block--right">
-          <ul>
-            {HeaderRoutes.map(headerRoute => (
-              <li key={headerRoute.link}>
-                <Link href={headerRoute.link}>
-                  <a
-                    className={cn({
-                      active: router.pathname === headerRoute.link,
-                    })}
-                  >
-                    {headerRoute.title}
-                  </a>
-                </Link>
-              </li>
-            ))}
-          </ul>
+          <MenuList />
+          <button className="btn-hamburger-icon" onClick={() => setSiderOpen(!siderOpen)}>
+            <img
+              src={siderOpen ? '/svg/close_icon.svg' : '/svg/ci_hamburger.svg'}
+              alt="hamburger icon"
+            />
+          </button>
+        </div>
+        <div className="menu-slider-mobile">
+          <MenuList />
         </div>
       </nav>
     </StyledHeader>

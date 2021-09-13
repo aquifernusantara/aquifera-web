@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 import { COLOR } from '@constants/color.constant';
+import { DEVICE_SIZE } from '@constants/device-size.constant';
 
 export const StyledOurMission = styled.div`
   display: flex;
@@ -9,6 +10,10 @@ export const StyledOurMission = styled.div`
   justify-content: center;
   background-color: ${COLOR.secondary};
   padding: 7.2rem;
+
+  @media (max-width: ${DEVICE_SIZE.tablet}) {
+    padding: 7.2rem 2.6rem;
+  }
 
   .title__container {
     display: flex;
@@ -30,6 +35,7 @@ export const StyledOurMission = styled.div`
 
     .map-of-indonesia {
       margin: 10rem 0;
+      width: 100%;
     }
 
     p {

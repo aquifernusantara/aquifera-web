@@ -1,3 +1,4 @@
+import { DEVICE_SIZE } from '@constants/device-size.constant';
 import styled from 'styled-components';
 
 export const StyledWaterboxDescription = styled.div`
@@ -7,6 +8,7 @@ export const StyledWaterboxDescription = styled.div`
   align-items: center;
   text-align: justify;
   margin-bottom: 2.4rem;
+  flex-wrap: wrap;
 
   .description {
     flex: 0.5;
@@ -31,6 +33,9 @@ export const StyledWaterboxDescription = styled.div`
         }
       }
     }
+    @media (max-width: ${DEVICE_SIZE.tablet}) {
+      flex: unset;
+    }
   }
 
   .image {
@@ -42,6 +47,10 @@ export const StyledWaterboxDescription = styled.div`
 
     img {
       max-width: 40rem;
+    }
+
+    @media (max-width: ${DEVICE_SIZE.tablet}) {
+      flex: unset;
     }
   }
 

@@ -5,4 +5,9 @@ export interface BottomCardProps {
   hrefPrimary?: string;
   hrefSecondary?: string;
   downloadSecondary?: boolean;
+  moveBack?: boolean;
+}
+
+export interface StyledBottomCardProps {
+  moveBack?: boolean;
 }

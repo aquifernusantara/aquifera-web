@@ -1,3 +1,4 @@
+import { DEVICE_SIZE } from '@constants/device-size.constant';
 import styled from 'styled-components';
 
 import { PageTitleBackgroundColor } from './page-title-card.enum';
@@ -20,4 +21,12 @@ export const StyledPageTitle = styled.div<StyledPageTitleProps>`
   border-radius: 0 1.2rem 1.2rem 0;
   width: 98%;
   box-shadow: 0.8rem 0 0 0 #000;
+
+  .page-title-card {
+    h1 {
+      @media (max-width: ${DEVICE_SIZE.tablet}) {
+        font-size: 4.4rem;
+      }
+    }
+  }
 `;

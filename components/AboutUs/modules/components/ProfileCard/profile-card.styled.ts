@@ -1,3 +1,4 @@
+import { DEVICE_SIZE } from '@constants/device-size.constant';
 import styled from 'styled-components';
 
 import { StyledProfileCardProps } from './profile-card.model';
@@ -16,6 +17,11 @@ export const StyledProfileCard = styled.div<StyledProfileCardProps>`
     background-repeat: no-repeat;
     background-size: contain;
     flex-shrink: 0;
+
+    @media (max-width: ${DEVICE_SIZE.tablet}) {
+      width: 32rem;
+      height: 32rem;
+    }
   }
 
   .info {

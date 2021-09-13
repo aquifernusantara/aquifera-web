@@ -13,4 +13,13 @@ export const StyledPresidentSection = styled.div`
     text-align: justify;
     margin-left: 8rem;
   }
+
+  @media (max-width: ${DEVICE_SIZE.tablet}) {
+    flex-wrap: wrap;
+    justify-content: center;
+
+    p {
+      margin: 4rem 2.5rem 0 2.5rem;
+    }
+  }
 `;

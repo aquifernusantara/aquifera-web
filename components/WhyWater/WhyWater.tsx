@@ -18,6 +18,7 @@ const WhyWater = () => {
       <BottomCard
         title="Sudah cukup tercerahkan?"
         buttonPrimaryTitle="Yuk, ikut bergabung"
+        moveBack
       />
     </StyledWhyWater>
   );

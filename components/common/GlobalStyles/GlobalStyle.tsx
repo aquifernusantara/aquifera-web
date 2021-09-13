@@ -74,6 +74,29 @@ const GlobalStyle = createGlobalStyle`
   p {
     font-size: 1.8rem;
   }
+
+  button.btn-hamburger-icon {
+    display: none;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    height: 7rem;
+    width: 8rem;
+
+    :hover {
+      transform: scale(1.05);
+      transition: 0.1s ease-out;
+    }
+
+    :active {
+      transform: scale(1);
+    }
+
+    @media (max-width: ${DEVICE_SIZE.tablet}) {
+      display: initial;
+    }
+  }
 `;
 
 export default GlobalStyle;

@@ -11,9 +11,10 @@ const BottomCard: React.FC<BottomCardProps> = ({
   hrefPrimary = '/kontribusi',
   hrefSecondary,
   downloadSecondary = false,
+  moveBack = false,
 }) => {
   return (
-    <StyledBottomCard>
+    <StyledBottomCard moveBack={moveBack}>
       <div className="card">
         <h3>{title}</h3>
         <div className="button-container">

@@ -25,5 +25,9 @@ export const StyledHowWeWork = styled.div`
     justify-content: center;
     max-width: ${DEVICE_SIZE.laptop};
     margin: auto;
+
+    @media(max-width: ${DEVICE_SIZE.laptop}) {
+      flex-wrap: wrap;
+    }
   }
 `;
