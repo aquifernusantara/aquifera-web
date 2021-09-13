@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 import { COLOR } from '@constants/color.constant';
 import { StyledBottomCardProps } from './bottom-card.model';
+import { DEVICE_SIZE } from '@constants/device-size.constant';
 
 export const StyledBottomCard = styled.div<StyledBottomCardProps>`
   display: flex;
@@ -11,6 +12,10 @@ export const StyledBottomCard = styled.div<StyledBottomCardProps>`
   padding: 6.4rem;
   position: ${props => props.moveBack ? 'relative' : 'static'};
   z-index: ${props => props.moveBack ? '-1' : '0'};
+
+  @media (max-width: ${DEVICE_SIZE.tablet}) {
+    padding: 6.4rem 0;
+  }
 
   .card {
     color: white;
@@ -37,6 +42,17 @@ export const StyledBottomCard = styled.div<StyledBottomCardProps>`
       button {
         :first-child {
           margin-right: 4.8rem;
+        }
+      }
+
+      @media (max-width: ${DEVICE_SIZE.tablet}) {
+        flex-wrap: wrap;
+
+        button {
+          :first-child {
+            margin-right: 0;
+            margin-bottom: 1.4rem;
+          }
         }
       }
     }
